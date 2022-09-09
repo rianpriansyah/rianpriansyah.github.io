@@ -1,0 +1,57 @@
+/* jumbotron */
+.jumbotron {
+  padding-top: 7rem;
+  background-color: #e2edff;
+  background-image: url("img/1unsplash.jpg");
+  background-attachment: fixed;
+  background-repeat: round;
+  background-position: 0 50px;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* about */
+.pkiri,
+.pkanan {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.pkanan {
+  transform: translate(50px, 0);
+}
+
+.pkiri.pMuncul,
+.pkanan.pMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* projects */
+.projects .card {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.projects .card.hadir {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 6rem;
+}
